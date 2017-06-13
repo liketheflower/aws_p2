@@ -44,4 +44,4 @@ sudo ldconfig
 error 2:
 oaded runtime CuDNN library: 5005 (compatibility version 5000) but source was compiled with 5110 (compatibility version 5100).  If using a binary install, upgrade your CuDNN library to match.  If building from sources, make sure the library loaded at runtime matches a compatible version specified during compile configuration.
 
-
+update the cudnn to 5.1 the problem is solved.
