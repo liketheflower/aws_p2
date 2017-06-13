@@ -68,3 +68,8 @@ oaded runtime CuDNN library: 5005 (compatibility version 5000) but source was co
 
 
 solution : update the cudnn to 5.1 the problem is solved.    
+
+
+error 3:nvcc-V: command not found   
+export LD_LIBRARY_PATH=/usr/local/cuda/lib  
+export PATH=$PATH:/usr/local/cuda/bin
