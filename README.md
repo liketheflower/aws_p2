@@ -54,6 +54,17 @@ follow the instruction below. The process is a bit slow be patient.
 
 http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html
 
+
+
+cv2.so is stored in  
+
+
+//home/ec2-user/opencv/release/cv2.so  
+
+then   
+
+export PYTHONPATH=/home/ec2-user/opencv/release/lib:$PYTHONPATH
+
 # error fix
 ImportError: libcublas.so.8.0: cannot open shared object file: No such file or directory  
 
