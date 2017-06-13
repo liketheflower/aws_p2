@@ -13,3 +13,9 @@ sudo yum install -y kernel-devel-4.9.27-14.31.amzn1.x86_64
 
 #copy file to the remote server
 scp -i /Users/jimmy/Dropbox/aws/gpu_processing_jimmy_server.pem /Users/jimmy/Dropbox/aws/NVIDIA-Linux-x86_64-375.66.run  ec2-user@52.11.200.193:~/
+
+# install the CUDA
+It seems that the AWS is based on their own linux distribution. I cannot choose a spricfied version and the RHEL 6 is finally chosen as the info from internet saying that the original version is based on RHEL 5/6.
+Download Installer for Linux RHEL 6 x86_64
+
+scp -i /Users/jimmy/Dropbox/aws/gpu_processing_jimmy_server.pem /Users/jimmy/Downloads/cuda_8.0.61_375.26_linux.run  ec2-user@52.11.200.193:~/
