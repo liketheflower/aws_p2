@@ -25,12 +25,12 @@ chmod +x cuda_8.0.61_375.26_linux.run
 sudo ./cuda_8.0.61_375.26_linux.run
 
 
-#install cudnn
+# install cudnn
 tar -xzvf cudnn-8.0-linux-x64-v5.0-ga.tgz
 sudo cp cuda/lib64/* /usr/local/cuda-8.0/lib64/
 sudo cp cuda/include/cudnn.h /usr/local/cuda-8.0/include/
  
  
-#install tensorflow gpu
-export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.10.0-cp27-none-linux_x86_64.whl
+# install tensorflow gpu
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.1.0-cp27-none-linux_x86_64.whl
 sudo pip install --upgrade $TF_BINARY_URL
