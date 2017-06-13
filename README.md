@@ -40,3 +40,8 @@ sudo pip install --upgrade $TF_BINARY_URL
 ImportError: libcublas.so.8.0: cannot open shared object file: No such file or directory
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
 sudo ldconfig
+
+error 2:
+oaded runtime CuDNN library: 5005 (compatibility version 5000) but source was compiled with 5110 (compatibility version 5100).  If using a binary install, upgrade your CuDNN library to match.  If building from sources, make sure the library loaded at runtime matches a compatible version specified during compile configuration.
+
+
