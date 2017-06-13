@@ -47,7 +47,12 @@ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorf
 
 sudo pip install --upgrade $TF_BINARY_URL  
 
+# opencv
 
+follow the instruction below. The process is a bit slow be patient.  
+
+
+http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html
 
 # error fix
 ImportError: libcublas.so.8.0: cannot open shared object file: No such file or directory  
