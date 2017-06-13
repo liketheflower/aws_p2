@@ -34,3 +34,9 @@ sudo cp cuda/include/cudnn.h /usr/local/cuda-8.0/include/
 # install tensorflow gpu
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.1.0-cp27-none-linux_x86_64.whl
 sudo pip install --upgrade $TF_BINARY_URL
+
+
+# error fix
+ImportError: libcublas.so.8.0: cannot open shared object file: No such file or directory
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
+sudo ldconfig
