@@ -102,6 +102,11 @@ export PYTHONPATH=/home/ec2-user/opencv/release/lib:$PYTHONPATH
 
 # check the memory size on aws
 
-df -h
+df -h  
 
+# list the size of each folder
+du -hsc *
 
+# list the size of a specified folder
+
+du -hs /home/ec2-user/repos
