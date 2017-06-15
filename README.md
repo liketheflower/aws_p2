@@ -74,6 +74,8 @@ sudo ldconfig
 
 soemtime try:    
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64/
+this one is better:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/
 
 to fix the ImportError
 
