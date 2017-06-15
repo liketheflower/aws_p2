@@ -91,3 +91,11 @@ solution : update the cudnn to 5.1 the problem is solved.
 error 3:nvcc-V: command not found   
 export LD_LIBRARY_PATH=/usr/local/cuda/lib  
 export PATH=$PATH:/usr/local/cuda/bin
+
+
+#  reboot config  
+. ~/torch/install/bin/torch-activate  
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib     
+export PATH=$PATH:/usr/local/cuda/bin    
+export PYTHONPATH=/home/ec2-user/opencv/release/lib:$PYTHONPATH  
+
