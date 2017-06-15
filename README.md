@@ -99,3 +99,9 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/li
 export PATH=$PATH:/usr/local/cuda/bin    
 export PYTHONPATH=/home/ec2-user/opencv/release/lib:$PYTHONPATH  
 
+
+# check the memory size on aws
+
+df -h
+
+
