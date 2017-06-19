@@ -110,6 +110,11 @@ collect2: error: ld returned 1 exit status
 
 
 
+reinstall the cudnn 5.1
+
+
+
+
 #  reboot config  
 . ~/torch/install/bin/torch-activate  
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib:/opt/OpenBLAS/lib  
