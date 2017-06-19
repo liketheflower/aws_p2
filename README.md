@@ -96,9 +96,25 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib
 export PATH=$PATH:/usr/local/cuda/bin
 
 
+error 4   
+/usr/bin/ld: cannot find -lopenblas
+collect2: error: ld returned 1 exit status
+make: *** [bin/im2rec] Error 1
+
+sudo ln -s /opt/OpenBLAS/lib/libopenblas.so /usr/lib/libopenblas.so
+
+
+erro 5
+collect2: error: ld returned 1 exit status
+make: *** [bin/im2rec] Error 1
+
+
+
+
 #  reboot config  
 . ~/torch/install/bin/torch-activate  
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib     
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib:/opt/OpenBLAS/lib  
+
 export PATH=$PATH:/usr/local/cuda/bin    
 export PYTHONPATH=/home/ec2-user/opencv/release/lib:$PYTHONPATH    
 
