@@ -114,10 +114,31 @@ reinstall the cudnn 5.1
 
 
 
+error 6   
+>>> import mxnet
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "mxnet/__init__.py", line 7, in <module>
+    from .base import MXNetError
+  File "mxnet/base.py", line 52, in <module>
+    _LIB = _load_lib()
+  File "mxnet/base.py", line 44, in _load_lib
+    lib = ctypes.CDLL(lib_path[0], ctypes.RTLD_GLOBAL)
+  File "/usr/lib64/python2.7/ctypes/__init__.py", line 357, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libopencv_cudabgsegm.so.3.2: cannot open shared object file: No such file or directory  
 
+
+solution:   
+ls /usr/local/lib   
+to find whether libopencv_cudabgsegm.so.3.2 is there. If it is there then export it to the LD_LIBRARY_PATH by doing:
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib 
+
+
+sudo ln -s /home/ec2-user/opencv/release/lib 
 #  reboot config  
 . ~/torch/install/bin/torch-activate  
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib:/opt/OpenBLAS/lib  
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib:/opt/OpenBLAS/lib:/usr/local/lib  
 
 export PATH=$PATH:/usr/local/cuda/bin    
 export PYTHONPATH=/home/ec2-user/opencv/release/lib:$PYTHONPATH    
