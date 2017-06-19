@@ -105,9 +105,8 @@ sudo ln -s /opt/OpenBLAS/lib/libopenblas.so /usr/lib/libopenblas.so
 
 
 erro 5
+undefined reference to `cudnnGetErrorString'
 collect2: error: ld returned 1 exit status
-make: *** [bin/im2rec] Error 1
-
 
 
 
