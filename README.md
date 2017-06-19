@@ -63,7 +63,10 @@ cv2.so is stored in
 
 then   
 
-export PYTHONPATH=/home/ec2-user/opencv/release/lib:$PYTHONPATH
+export PYTHONPATH=/home/ec2-user/opencv/release/lib:$PYTHONPATH  
+
+
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 
 # error fix
 ImportError: libcublas.so.8.0: cannot open shared object file: No such file or directory  
@@ -97,7 +100,9 @@ export PATH=$PATH:/usr/local/cuda/bin
 . ~/torch/install/bin/torch-activate  
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib     
 export PATH=$PATH:/usr/local/cuda/bin    
-export PYTHONPATH=/home/ec2-user/opencv/release/lib:$PYTHONPATH  
+export PYTHONPATH=/home/ec2-user/opencv/release/lib:$PYTHONPATH    
+
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig  
 
 
 # check the memory size on aws
