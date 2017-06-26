@@ -156,3 +156,10 @@ du -hsc *
 # list the size of a specified folder
 
 du -hs /home/ec2-user/repos
+
+
+#  how to scroll the history command from the terminal in mac when ssh aws
+
+Hit your screen prefix combination (C-a / control+A by default), then hit Escape. 
+
+
