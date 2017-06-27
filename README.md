@@ -179,6 +179,26 @@ solution:
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ec2-user/hdf5-1.10.1/hdf5/lib
 
 
+
+# error 10   
+[ec2-user@ip-172-31-22-81 caffe]$ make pycaffe
+CXX/LD -o python/caffe/_caffe.so python/caffe/_caffe.cpp
+python/caffe/_caffe.cpp:10:31: fatal error: numpy/arrayobject.h: No such file or directory
+ #include <numpy/arrayobject.h>
+ 
+ 
+ find the location of numpy/arrayobject.h
+ 
+ input python in terminal goto ipython then :   
+ import site; site.getsitepackages()    
+ 
+ 
+ change the make file to the correct location
+ 
+PYTHON_INCLUDE := /usr/include/python2.7 \
+                /usr/local/lib64/python2.7/site-packages/numpy/core/include
+                
+                
 #  reboot config  
 . ~/torch/install/bin/torch-activate  
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib:/opt/OpenBLAS/lib:/usr/local/lib:/home/ec2-user/hdf5-1.10.1/hdf5/lib
