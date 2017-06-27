@@ -135,7 +135,13 @@ to find whether libopencv_cudabgsegm.so.3.2 is there. If it is there then export
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib 
 
 
-sudo ln -s /home/ec2-user/opencv/release/lib 
+error 7 when install caffe
+fatal error: hdf5.h: No such file or directory
+add  
+/home/ec2-user/hdf5-1.10.1/hdf5/lib/include to INCLUDE_DIRS at line 85 in Makefile.config.
+
+--- INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /home/ec2-user/hdf5-1.10.1/hdf5/lib/include
+
 #  reboot config  
 . ~/torch/install/bin/torch-activate  
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib:/opt/OpenBLAS/lib:/usr/local/lib  
