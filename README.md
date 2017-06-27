@@ -140,7 +140,29 @@ fatal error: hdf5.h: No such file or directory
 add  
 /home/ec2-user/hdf5-1.10.1/hdf5/lib/include to INCLUDE_DIRS at line 85 in Makefile.config.
 
---- INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /home/ec2-user/hdf5-1.10.1/hdf5/lib/include
+--- INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /home/ec2-user/hdf5-1.10.1/hdf5/lib/include  /home/ec2-user/hdf5-1.10.1/hdf5/lib
+
+
+
+
+
+
+error 8   
+
+usr/bin/ld: cannot find -lleveldb
+collect2: error: ld returned 1 exit status
+make: *** [.build_release/lib/libcaffe.so.1.0.0] Error 1
+solution:
+
+
+git clone https://github.com/google/leveldb.git
+cd leveldb/
+make
+sudo scp out-static/lib* out-shared/lib* /usr/local/lib/
+cd include/
+sudo scp -r leveldb /usr/local/include/
+sudo ldconfig
+
 
 #  reboot config  
 . ~/torch/install/bin/torch-activate  
