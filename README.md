@@ -164,9 +164,24 @@ sudo scp -r leveldb /usr/local/include/
 sudo ldconfig
 
 
+error 9  
+
+[ec2-user@ip-172-31-22-81 caffe]$ make runtest
+.build_release/tools/caffe
+.build_release/tools/caffe: error while loading shared libraries: libhdf5_hl.so.100: cannot open shared object file: No such fi
+le or directory   
+
+
+
+
+
+solution:    
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ec2-user/hdf5-1.10.1/hdf5/lib
+
+
 #  reboot config  
 . ~/torch/install/bin/torch-activate  
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib:/opt/OpenBLAS/lib:/usr/local/lib  
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib:/opt/OpenBLAS/lib:/usr/local/lib:/home/ec2-user/hdf5-1.10.1/hdf5/lib
 
 export PATH=$PATH:/usr/local/cuda/bin    
 export PYTHONPATH=/home/ec2-user/opencv/release/lib:$PYTHONPATH    
