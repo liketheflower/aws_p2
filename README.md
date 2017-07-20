@@ -198,7 +198,24 @@ python/caffe/_caffe.cpp:10:31: fatal error: numpy/arrayobject.h: No such file or
 PYTHON_INCLUDE := /usr/include/python2.7 \
                 /usr/local/lib64/python2.7/site-packages/numpy/core/include
                 
-                
+# error     
+
+>>> import mxnet
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: No module named mxnet
+
+
+# solution   
+after installing the mxnet from source, go to the path folder and run the command :
+
+```sh
+$ cd python
+$ pip install --upgrade pip
+$ pip install -e .
+```        
+           
+           
 #  reboot config  
 . ~/torch/install/bin/torch-activate  
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64/:usr/local/cuda/lib:/opt/OpenBLAS/lib:/usr/local/lib:/home/ec2-user/hdf5-1.10.1/hdf5/lib
