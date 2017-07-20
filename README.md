@@ -214,7 +214,24 @@ $ cd python
 $ pip install --upgrade pip
 $ pip install -e .
 ```        
-           
+      
+      
+      
+# error    
+install the mxnet cannot find the OpenBLAS related something on ubuntu
+/usr/bin/ld:cannot find -lopenblas
+
+# solution:    
+
+aften the installationg of the OpenBLASS, run the command below to put the related lib file in to the path   :/opt/OpenBLAS.  
+sudo make PREFIX=/opt/OpenBLAS install
+
+ THEN :  
+
+You need add /opt/openblas/lib to your LD path. you can search internet for "Linux ldconfig"
+
+or a simper solution, copy libopenblas.* from /opt/OpenBLAS/lib/ to /usr/local/lib64 (maybe /usr/local/lib) depends on your env. i don't have centos to check for sure.) after copy, run the command to refresh ld cacahe: "sudo ldconfig"
+
            
 #  reboot config  
 . ~/torch/install/bin/torch-activate  
