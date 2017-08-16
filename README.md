@@ -263,6 +263,14 @@ Hit your screen prefix combination (C-a / control+A by default), then hit Escape
 #  how to update cmake
 
 
-wget https://cmake.org/files/v3.9/cmake-3.9.1.tar.gz
+wget https://cmake.org/files/v3.9/cmake-3.9.1.tar.gz  
+tar xf cmake-3.9.1.tar.gz  
+
+cd cmake-3.9.1  
+
+./configure  
+
+make  
+
 
 
