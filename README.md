@@ -260,3 +260,9 @@ du -hs /home/ec2-user/repos
 Hit your screen prefix combination (C-a / control+A by default), then hit Escape. 
 
 
+#  how to update cmake
+
+
+wget https://cmake.org/files/v3.9/cmake-3.9.1.tar.gz
+
+
