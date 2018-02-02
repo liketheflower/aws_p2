@@ -78,17 +78,20 @@ source ~/.profile
 https://developer.nvidia.com/rdp/cudnn-download
 and you can get a file:cudnn-8.0-linux-x64-v6.0.tgz
 2) unzip the file:
+```
 tar -xzvf cudnn-8.0-linux-x64-v6.0.tgz
+```
 3) run the commands below:
+```
 sudo cp cuda/lib64/* /usr/local/cuda-8.0/lib64/
 sudo cp cuda/include/cudnn.h /usr/local/cuda-8.0/include/
-
+```
 
 # install GPU tensorflow by using pip based on python2.7
-
+```
 sudo apt-get install python-pip python-dev
 sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.0-cp27-none-linux_x86_64.whl
-
+```
 
 
 
@@ -103,9 +106,11 @@ export PYTHONPATH=/home/ioannis/OpenCV/opencv/release/lib:$PYTHONPATH
 
 
 # update the python packages
+```
 sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-
+```
 
 # install keras
+```
 sudo pip install keras
-
+```
