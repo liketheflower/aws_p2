@@ -114,3 +114,9 @@ sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython
 ```
 sudo pip install keras
 ```
+# errors
+ImportError: libcublas.so.8.0: cannot open shared object file: No such file or directory
+solution:
+```
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
+```
