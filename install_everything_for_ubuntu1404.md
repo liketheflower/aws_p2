@@ -114,9 +114,17 @@ sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython
 ```
 sudo pip install keras
 ```
-# errors
+# errors 1
 ImportError: libcublas.so.8.0: cannot open shared object file: No such file or directory
 solution:
 ```
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64
 ```
+
+# error 2:
+2018-02-13 12:07:23.732683: I tensorflow/stream_executor/dso_loader.cc:129] Couldn't open CUDA library libcupti.so.8.0. LD_LIBRARY_PATH: /usr/local/cuda-8.0/lib64
+
+solution:
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64/export 
+
