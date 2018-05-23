@@ -283,8 +283,11 @@ tar cvzf - dir/ | split -b 200m - sda1.backup.tar.gz.
 
 
 how to uncompress
+this one if not working for multiple files
 for i in *.tar.gz.*; do tar xvzf $i -C path/to/output/directory; done
+this one works
 
+cat m2000_2999.tar.gz.* | tar xzf -
 
 
 # how to run matlab from terminal
