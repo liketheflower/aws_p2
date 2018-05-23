@@ -277,6 +277,15 @@ make
 tar -zcvf myfile.tgz .
 tar -zxvf myfile.tgz
 
+# split to multiple files on mac
+
+tar cvzf - dir/ | split -b 200m - sda1.backup.tar.gz.
+
+
+how to uncompress
+for i in *.tar.gz.*; do tar xvzf $i -C path/to/output/directory; done
+
+
 
 # how to run matlab from terminal
 matlab -nosplash -nodisplay -r "run demo_new_output_bbox_corners_file_with_label_ptx_mask_lab.m;quit;"
