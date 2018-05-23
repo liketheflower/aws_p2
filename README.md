@@ -272,5 +272,11 @@ cd cmake-3.9.1
 
 make  
 
+# how to compress and uncompress files in linux
+
+tar -zcvf myfile.tgz .
+tar -zxvf myfile.tgz
 
 
+# how to run matlab from terminal
+matlab -nosplash -nodisplay -r "run demo_new_output_bbox_corners_file_with_label_ptx_mask_lab.m;quit;"
