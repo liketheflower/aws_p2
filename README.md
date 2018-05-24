@@ -292,3 +292,16 @@ cat m2000_2999.tar.gz.* | tar xzf -
 
 # how to run matlab from terminal
 matlab -nosplash -nodisplay -r "run demo_new_output_bbox_corners_file_with_label_ptx_mask_lab.m;quit;"
+
+# how to rename files
+
+rename 's/^video_//' *.mp4    
+That means select all filenames started with video_ and replace video_ with nothing. I guess s is for "substitute".
+
+^ shows the beginning of string. If you omit ^, the first occurrence of video_ will be removed no matter where it is located in the string. But in your case it does not really matter.
+
+
+rename 's/_rawxyz//' *.ptx
+
+
+
