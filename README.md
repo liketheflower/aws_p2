@@ -302,6 +302,7 @@ That means select all filenames started with video_ and replace video_ with noth
 
 
 rename 's/_rawxyz//' *.ptx
+rename 's/_rawxyz//' *angles.txt
 
 
 
