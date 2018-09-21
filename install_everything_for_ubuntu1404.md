@@ -134,3 +134,23 @@ https://github.com/pearsonlab/pearsonlab.github.io/wiki/Things-to-know-when-inst
 
 
 https://askubuntu.com/questions/206283/how-can-i-uninstall-a-nvidia-driver-completely 
+
+
+GPU DIAGNOS  
+
+$ lspci | grep -i vga
+01:00.0 VGA compatible controller: NVIDIA Corporation GM200 [GeForce GTX TITAN X] (rev a1)
+
+$ dpkg -l | grep -i nvidia
+ii  bbswitch-dkms                                         0.7-2ubuntu1                                        amd64        Interface for toggling the power on nVidia Optimus video cards
+ii  libcuda1-352                                          352.93-0ubuntu1                                     amd64        NVIDIA CUDA runtime library
+ii  nvidia-352                                            352.93-0ubuntu1                                     amd64        NVIDIA binary driver - version 352.93
+ii  nvidia-352-dev                                        352.93-0ubuntu1                                     amd64        NVIDIA binary Xorg driver development files
+ii  nvidia-352-uvm                                        352.93-0ubuntu1                                     amd64        Transitional package for nvidia-352
+ii  nvidia-modprobe                                       352.93-0ubuntu1                                     amd64        Load the NVIDIA kernel driver and create device files
+ii  nvidia-opencl-icd-352                                 352.93-0ubuntu1                                     amd64        NVIDIA OpenCL ICD
+ii  nvidia-prime                                          0.6.2                                               amd64        Tools to enable NVIDIA's Prime
+ii  nvidia-settings                                       352.93-0ubuntu1  
+
+
+
