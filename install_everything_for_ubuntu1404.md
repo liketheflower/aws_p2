@@ -152,5 +152,6 @@ ii  nvidia-opencl-icd-352                                 352.93-0ubuntu1       
 ii  nvidia-prime                                          0.6.2                                               amd64        Tools to enable NVIDIA's Prime
 ii  nvidia-settings                                       352.93-0ubuntu1  
 
-
+# Complete cleaning  
+https://askubuntu.com/questions/206283/how-can-i-uninstall-a-nvidia-driver-completely
 
