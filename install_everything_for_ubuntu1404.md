@@ -131,3 +131,6 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64/expor
 
 # Useful links  
 https://github.com/pearsonlab/pearsonlab.github.io/wiki/Things-to-know-when-installing-NVIDIA-drivers
+
+
+https://askubuntu.com/questions/206283/how-can-i-uninstall-a-nvidia-driver-completely 
