@@ -155,3 +155,8 @@ ii  nvidia-settings                                       352.93-0ubuntu1
 # Complete cleaning  
 https://askubuntu.com/questions/206283/how-can-i-uninstall-a-nvidia-driver-completely
 
+
+
+# install cuda 9.2 this one works
+https://linoxide.com/linux-how-to/install-cuda-ubuntu/
+
