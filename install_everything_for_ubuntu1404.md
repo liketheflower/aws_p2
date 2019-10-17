@@ -16,6 +16,10 @@ Download NVIDIA CUDA Toolkit: "runfile (local)". That is 1.1 GB.
 ```
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
 ```
+
+for 16.04 CUDA 9.1 try this one   
+cuda_9.1.85_387.26_linux.run
+
 2) change the file name:
 ```
 mv cuda_8.0.61_375.26_linux-run cuda_8.0.61_375.26_linux.run
